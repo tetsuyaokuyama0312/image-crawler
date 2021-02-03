@@ -17,4 +17,4 @@ This tool crawls image files on the web.
         |--max-num|-m|max number of files to crawl|N|300|-|
         |--search-engine|-s|search engine used for crawl|N|bing|bing, baidu *|
 
-    - `*` google is currently unavailable because icrawler does not support google specification changes
+       - `*` google is currently unavailable because icrawler does not support google specification changes
