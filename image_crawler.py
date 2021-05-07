@@ -41,8 +41,8 @@ def crawl(keywords: list, out_dir: str = DEFAULT_OUT_DIR, max_num: int = DEFAULT
         crawler.crawl(keyword=keyword, max_num=max_num)
 
 
-def get_crawler(crawler_op: str, out_dir: str):
-    crawler_cls = CRAWLER_CLASSES.get(crawler_op.lower(), DEFAULT_CRAWLER_CLASS)
+def get_crawler(search_engine: str, out_dir: str):
+    crawler_cls = CRAWLER_CLASSES.get(search_engine.lower(), DEFAULT_CRAWLER_CLASS)
     return crawler_cls(downloader_threads=DOWNLOADER_THREADS, storage={'root_dir': out_dir})
 
 
